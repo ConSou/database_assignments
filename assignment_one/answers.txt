@@ -1,0 +1,91 @@
+Q1:  What data types do each of these values represent?
+
+"A Clockwork Orange"
+42
+09/02/1945
+98.7
+$15.99
+
+A1: "A Clockwork Orange" = type varchar
+42 = type integer
+09/02/1945 = type date
+98.7 = type float
+$15.99 = type varchar
+________________________________________________________________________________
+
+Q2:  Explain in your own words when a database might be used. Explain when a text
+file might be used.
+
+A2:  A database might be used when you need to easily manage, read or change data.
+While a text file might be better for more static data.
+________________________________________________________________________________
+
+Q3:  Describe one difference between SQL and other programming languages.
+
+A3:  SQL is a declarative while most other programming languages are procedural.
+Meaning that in SQL we can focus more on the data we want to find or change rather
+then focusing on how to find or change it.
+________________________________________________________________________________
+
+Q4:  In your own words, explain how the pieces of a database system fit together
+at a high level.
+
+A4:  A database holds the tables of data, columns label what data is stored beneath
+them and rows make up a complete set of data.  The cells of the table hold the actual
+values.
+
+________________________________________________________________________________
+
+?Q5:  Explain the meaning of table, row, column, and value.
+
+A5:  The table encompasses all other parts, holding the columns, rows and values.
+The columns label the data that is stored beneath.  While the rows show a complete
+set of data.  the values are the actual data that are held in the cells.
+________________________________________________________________________________
+
+Q6:  List 3 data types that can be used in a table.
+
+A6:  1. varchar()
+     2. Integer
+     3. Float
+________________________________________________________________________________
+
+Q7:  Given this payments table, provide an English description of the following
+queries and include their results:
+
+     SELECT date, amount
+     FROM payments;
+     (You are getting the date and amount columns from the payments table)
+
+     SELECT amount
+     FROM payments
+     WHERE amount > 500;
+     (You are getting the amount column where the amount value is greater then
+      500 from the payments table)
+
+     SELECT *
+     FROM payments
+     WHERE payee = 'Mega Foods';
+     (You are getting all columns where the payee is equal to Mega Foods from then
+      payments table)
+
+A7:  See above
+________________________________________________________________________________
+
+Q8:  Given this users table, write SQL queries using the following criteria and
+include the output:
+
+  The email and sign-up date for the user named DeAndre Data.
+  (Query) SELECT email, signup From users WHERE name = 'DeAndre Data';
+  (Output) email: datad@comcast.net signup: 2008-01-20T00:00:00.000Z
+
+  The user ID for the user with email 'aleesia.algorithm@uw.edu'.
+  (Query) SELECT userid FROM users WHERE email = 'aleesia.algorithm@uw.edu';
+  (Output) userid: 1
+
+  All the columns for the user ID equal to 4.
+  (Query) SELECT * FROM users WHERE userid = 4
+  (Output) userid: 4 name: Brandy Boolean email: bboolean@nasa.gov signup: 1999-10-15T00:00:00.000Z
+
+A8:  See above
+________________________________________________________________________________
